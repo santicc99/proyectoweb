@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <style></style>
+    <title>::. < PythonGamers > .::</title>
+</head>
+<body>
+    <section class="container">
+        <div class="item header"><img id="logo" src="img/logo.png" alt="::. < PythonGamers > .::"></div>
+        
+        <div class="item menu"><ul class="menu">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="noticias.html">NOTICIAS</a></li>
+            <li><a href="reviews.html">REVIEWS</a></li>
+            <li><a href="formulario.html">LIBRO DE VISITAS</a></li>
+            </ul>
+        </div>
+
+        <div class="item contenido"><h1>MUCHAS GRACIAS POR TU TIEMPO></h1>
+            <form id="formulario" onsubmit="return validarFormulario()">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br>
+                <br>
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" required><br>
+                <br>
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="text" id="telefono" required>
+                    <span id="telefonoError" class="error"></span>
+                </div>
+                <br>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                    <span id="emailError" class="error"></span>
+                </div>
+                <br>
+                <label for="juego">Juego favorito:</label>
+                <input type="text" id="juego" name="juego" required><br>
+                <br>
+                <label for="conocimiento">¿Cómo conociste la página?:</label>
+                <input type="text" id="conocimiento" name="conocimiento" required><br>
+                <br>
+                <label for="sugerencias">Sugerencias:</label>
+                <textarea id="sugerencias" name="sugerencias" rows="4" cols="40"></textarea><br>
+                <br>
+        
+                <input type="submit" value="Enviar">
+        
+            </form></div>
+        <div class="item footer">Fullstack Python - TPO1 - Comisión 23017</div>
+    </section>
+    <script src="js/formulario.js"></script>
+</body>
+</html>

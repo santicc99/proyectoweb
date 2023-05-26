@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Mulish:wght@200&display=swap');
+
+
+body {
+    background-color: black;
+    background-image: radial-gradient(purple, black);
+}
+
+#logo {
+
+    width: 100vw;
+    max-width: 1000px;
+    min-width: 100%;
+    margin: auto;
+    box-align: center;
+
+}
+
+.container {
+    display: grid;
+    grid-template: 20% 70% 10% / 25% 75%;
+    grid-template-areas:
+    "header header"
+    "left contenido"
+    "footer footer";
+    grid-gap: 10px;
+    height: 100vh;                     
+}
+
+.header {
+    grid-area: header;
+    ;
+}
+
+.menu {
+    grid-area: left;
+    color: whitesmoke; 
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-left: 5%;
+    list-style: none;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+a:link, a:visited { text-decoration: none; color: whitesmoke;}
+
+
+
+.contenido {
+    grid-area: contenido;
+    font-family: 'Mulish', sans-serif;
+    text-align: center;
+    margin: 0px, auto;
+    overflow: auto;
+    display: grid;
+}
+
+.video-responsive {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+}
+
+  .video-responsive iframe, .video-responsive object, .video-responsive embed {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}    
+
+#contimg {
+
+    width: 30vw;
+    max-width: 1000px;
+    min-width: 200px;
+    margin: auto;
+}    
+
+.footer {
+    grid-area: footer;
+}
+
+.item {
+    background-color: rgba(224, 91, 0, 0.9);
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    border-style: outset;
+    border-color: orange;
+}
+@keyframes aparecer-desaparecer {
+    0% {
+      opacity:0;
+    }
+    50% {
+      opacity: 2;
+    }
+    100% {
+      opacity: 0;
+    }
+
+}
+
+  .animacion {
+    animation: aparecer-desaparecer 3s linear infinite;
+  }
+  
